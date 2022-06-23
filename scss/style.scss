@@ -1,0 +1,39 @@
+$color-principal: #54456b;
+
+/* ============ desktop view ============ */
+@media all and ( min-width: 992px){
+    .navbar{
+        .nav-item {
+            .dropdown-menu{
+                display: none;
+                margin-top: 0;
+            }
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* ============ desktop view .end// ============ */
+#principal_bg {
+	background-color: $color-principal !important;
+}
+#social_b {
+	background-color: #c3b8d4 !important;
+}
+#copyr {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+p {
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: bolder;
+	color: black;
+	text-align: justify-all;
+}
+#coold-1 {
+	border: 6px solid $color-principal;
+}
