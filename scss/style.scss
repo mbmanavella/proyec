@@ -37,3 +37,41 @@ p {
 #coold-1 {
 	border: 6px solid $color-principal;
 }
+
+$vista:mobile;
+$h1Desktop: 20px;
+$h1Mobile: 14px;
+body{
+@if $vista == desktop {
+    @media only screen and (min-width:1024px){
+        h1{font-size:$h1Desktop;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width:767px){
+            h1{font-size:$h1Mobile;} 
+        }
+    } @else {
+        h1{font-size:34px;}
+        
+    }
+}
+
+.boton{
+    color:white; 
+    background-color: blue;
+
+}
+.boton--enviar{
+    @extend .boton; 
+    background-color:#c3b8d4 !important;
+    border: 0px !important;
+}
+
+@mixin principal-fs {
+    font-size: xx-large !important;
+    color: black;
+    text-align: center
+}
+.galeria-fs{
+    @include principal-fs;
+}

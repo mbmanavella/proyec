@@ -25,3 +25,20 @@ p {
 
 #coold-1 {
   border: 6px solid #54456b; }
+
+@media only screen and (max-width: 767px) {
+  body h1 {
+    font-size: 14px; } }
+
+.boton, .boton--enviar {
+  color: white;
+  background-color: blue; }
+
+.boton--enviar {
+  background-color: #c3b8d4 !important;
+  border: 0px !important; }
+
+.galeria-fs {
+  font-size: xx-large !important;
+  color: black;
+  text-align: center; }
